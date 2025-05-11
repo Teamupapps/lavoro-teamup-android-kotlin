@@ -1,0 +1,97 @@
+<resources>
+
+    <style name="Base.Theme.TEAMUP" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/violet</item>
+        <item name="colorOnPrimary">@color/light</item>
+        <item name="colorOnSecondary">@color/dark</item>
+        <item name="colorAccent">@color/violet</item>
+        <item name="android:statusBarColor">?attr/colorOnPrimary</item>
+        <item name="android:windowBackground">?attr/colorOnPrimary</item>
+        <item name="android:navigationBarColor">?attr/colorOnPrimary</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+    <style name="_toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?attr/colorOnPrimary</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:paddingStart">@dimen/toolbar_padding</item>
+        <item name="android:paddingEnd">@dimen/toolbar_padding</item>
+    </style>
+
+    <style name="_bottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?attr/colorOnPrimary</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="_bottomSheetModal" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="_editText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">start</item>
+        <item name="android:inputType">text</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="_actionBtn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/item_action_btn</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/light</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="_endedUpdateText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:text">@string/update</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/title_update_size</item>
+        <item name="android:textColor">@color/violet</item>
+    </style>
+
+    <style name="_endedActionImg">
+        <item name="android:layout_height">@dimen/img_action_size</item>
+        <item name="android:layout_width">@dimen/img_action_size</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="_endedImgMenu" parent="_endedActionImg">
+        <item name="android:src">@drawable/ic_menu</item>
+    </style>
+
+    <style name="_endedSettingsImg" parent="_endedActionImg">
+        <item name="android:src">@drawable/ic_settings</item>
+    </style>
+
+    <style name="_endedSwitch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+    </style>
+
+</resources>

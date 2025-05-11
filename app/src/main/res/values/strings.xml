@@ -1,0 +1,269 @@
+<resources>
+    <string name="app_name">TeamupApp</string>
+    <string name="app_name_organization">TeamupApps - Business\'s Finances</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="login_status">Login Status?</string>
+    <string name="create_account">Create a new account?</string>
+    <string name="continue_with_google">Continue With Google?</string>
+    <string name="signed_in_success">Signed in successfully.</string>
+
+    <string name="permission_granted_storage">Storage Permission Granted</string>
+    <string name="permission_denied_storage">Storage Permission Denied</string>
+
+    <string name="statics">Statistics</string>
+    <string name="statics_use">Use Live Statistics.</string>
+    <string name="statics_summary">Use statistics to auto-calculate total asset price, quantity, and total balance.</string>
+    <string name="statistics_error">Cannot read statistics.</string>
+
+    <string name="server">Server</string>
+    <string name="server_use">Use a Remote Server.</string>
+    <string name="server_summary">Use our remote server for data sharing with your team, tracking your balance, and managing your business\'s finances.</string>
+    <string name="server_disabled">Server disabled.</string>
+
+    <string name="datasource">Datasource</string>
+    <string name="datasource_connection">Datasource Connection</string>
+
+    <string name="cached">Cached</string>
+    <string name="cache_settings">Cache Settings</string>
+    <string name="cache">Cache time</string>
+    <string name="cache_clear">Clear Cache?</string>
+    <string name="cache_reset">Reset Cache Times?</string>
+    <string name="cache_time_setup">Set the maximum cache time for the main item list local storage, default is 10 minutes.</string>
+
+
+    <string name="backups">Data Backups.</string>
+    <string name="backups_settings">Backups Settings</string>
+    <string name="backups_use">Use Auto-Backups.</string>
+    <string name="backups_summary">Allow the device to backup a copy of your data list at a certain time.</string>
+    <string name="backups_setup">Backup set up for auto data backup.</string>
+    <string name="backups_canceled">Backup canceled.</string>
+    <string name="backups_alarm_error">Error while setting data backups.</string>
+    <string name="backups_start">Data backup to your local device has been started…</string>
+
+    <string name="sync_setup">Setup synchronization.</string>
+    <string name="sync_success">User synced successfully.</string>
+    <string name="sync_error">Error while syncing user.</string>
+
+    <string name="unauthorized">Unauthorized.</string>
+    <string name="unauthorized_summary">An unauthorized. A local database is used.</string>
+    <string name="unauthorized_check_user">Checking for an authorized user…</string>
+
+    <string name="filter">Filter</string>
+    <string name="filtered">Filtered</string>
+    <string name="filter_by_month">Filter Within this month.</string>
+    <string name="filter_by_month_summary">Filter the data and search process within this day only.</string>
+    <string name="filter_by_active">Filter By Active.</string>
+    <string name="filter_by_active_summary">Filter the data list and search process by active items only.</string>
+    <string name="filter_by_sell">Filter By Sell.</string>
+    <string name="filter_by_sell_summary">Filter the data and search process by sell items only.</string>
+
+    <string name="notes_use">Use Business Notes.</string>
+    <string name="notes_summary">Create, update, and delete notes for your team.</string>
+
+    <string name="share_suggest">Suggest share.</string>
+    <string name="share_summary">Suggest item sharing each time the item is successfully updated.</string>
+
+    <string name="add_suggest">Suggest adding data.</string>
+    <string name="add_summary">Suggest adding data each time an empty list is detected.</string>
+
+    <string name="update">Update</string>
+    <string name="update_item">Update Item</string>
+    <string name="update_summary">Read, Update, and Delete Data.</string>
+    <string name="update_by">Update by</string>
+    <string name="update_date">Update date</string>
+    <string name="updated_success">Updated successfully.</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="update_team">Update Team</string>
+    <string name="update_transaction">Update Transaction</string>
+
+    <string name="delete">Delete</string>
+    <string name="delete_permanently">Delete Permanently</string>
+
+    <string name="balance">Balance</string>
+    <string name="balance_total">Total balance</string>
+    <string name="balance_use">Calculate Balance.</string>
+    <string name="balance_summary">calculate total items balance.</string>
+    <string name="balance_today">Today\'s balance only.</string>
+    <string name="balance_active">Active</string>
+    <string name="balance_all">All</string>
+    <string name="balance_read_error">Cannot read balance.</string>
+
+    <string name="city">City</string>
+    <string name="city_select">Select City</string>
+    <string name="city_search">Search for city, state, or business location.</string>
+    <string name="city_list">City list.</string>
+    <string name="city_list_desc">Uses as a business location for clients.</string>
+    <string name="city_list_empty">City list is empty.</string>
+    <string name="city_list_error">Error retrieving city list.</string>
+
+    <string name="brand">Brand</string>
+    <string name="brand_select">Select Brand</string>
+    <string name="brands_search">Search for brand by name, or business location.</string>
+    <string name="brand_list">Brand list.</string>
+    <string name="brand_list_desc">Uses as a business brand for products.</string>
+    <string name="brand_list_empty">Brand list is empty.</string>
+    <string name="brand_list_error">Error retrieving brand list.</string>
+
+    <string name="client">Client</string>
+    <string name="client_select">Select Client</string>
+    <string name="clients_search">Search for clients by name, phone, or business location.</string>
+    <string name="client_list">Client list.</string>
+    <string name="client_list_desc">Uses as a second-party for transactions.</string>
+    <string name="client_list_empty">Client list is empty.</string>
+    <string name="client_list_error">Error retrieving client list.</string>
+    <string name="client_dial">Dial Client</string>
+    <string name="client_entry">Client Entry</string>
+    <string name="client_entry_desc">Use clients as a transaction second entry.</string>
+
+    <string name="product">Product</string>
+    <string name="product_select">Select Product</string>
+    <string name="products_search">Search for product by name.</string>
+    <string name="product_list">Product list.</string>
+    <string name="product_list_desc">Uses as an asset for your stock.</string>
+    <string name="product_list_empty">Product list is empty.</string>
+    <string name="product_list_error">Error retrieving product list.</string>
+    <string name="product_entry">Product Entry</string>
+    <string name="product_entry_desc">Use products as a transaction second entry.</string>
+
+    <string name="note">Note</string>
+    <string name="notes">Notes</string>
+    <string name="notes_list">Notes List</string>
+    <string name="note_list_error">Error retrieving note list.</string>
+    <string name="note_hint">Only your team would receive these instructions or notes.</string>
+
+    <string name="team">Team</string>
+    <string name="team_search">Search for team member.</string>
+    <string name="team_list">Team List.</string>
+    <string name="team_list_desc">Activating and Deactivating Users.</string>
+    <string name="team_error">Error retrieving team.</string>
+
+    <string name="transactions">Transactions</string>
+    <string name="transaction_list">Transaction List</string>
+    <string name="transaction_list_error">Error retrieving transaction list.</string>
+    <string name="transaction_hint">Only your activated team members will receive these updates.</string>
+    <string name="transaction_note_hint">Attach a note.</string>
+
+    <string name="stock">Stock</string>
+    <string name="stock_list">Stock List</string>
+    <string name="stock_list_error">Error retrieving stock list.</string>
+    <string name="stock_use">Use Live Stock.</string>
+    <string name="stock_summary">Use stock statistics to auto-calculate total asset quantity, and total stock balance.</string>
+
+    <string name="unable_to_sign_in">Unable to complete the signing-in process.</string>
+    <string name="unable_to_sign_out">Unable to complete the signing out process.</string>
+    <string name="unable_to_sign_up">Unable to complete the signing-up process.</string>
+
+    <string name="cannot_find_auth_user">Cannot find an authenticated user</string>
+    <string name="cannot_read_local_data">Cannot read local data.</string>
+    <string name="cannot_read_remote_data">Cannot read remote data.</string>
+    <string name="cannot_update_entries">Cannot update entries.</string>
+    <string name="cannot_update_remote_data">Cannot update remote data.</string>
+    <string name="cannot_update_local_entries">Cannot update local entries.</string>
+
+    <string name="invalid">Invalid.</string>
+    <string name="invalid_name">Invalid name.</string>
+    <string name="invalid_cost">Invalid cost.</string>
+    <string name="invalid_credentials">Invalid Credentials.</string>
+    <string name="invalid_phone_num">Invalid phone number.</string>
+    <string name="invalid_phone_num_format">Invalid phone number format.</string>
+
+    <string name="exporting">Exporting…</string>
+    <string name="export_list">Export List</string>
+    <string name="export_success">Data exported successfully.</string>
+    <string name="export_summary">Export a copy of your data list as a backup Excel file.</string>
+    <string name="export_error">Error while data exporting.</string>
+
+    <string name="search">Search</string>
+    <string name="search_by_date">Search by create or update date…</string>
+
+    <string name="copy_success">Copied to clipboard.</string>
+    <string name="copy_as_text">Copy as plain text</string>
+
+    <string name="unit_price">Unit Price</string>
+    <string name="unit_total_no">No. of Units</string>
+    <string name="unit_price_calculation">Unit price = total price / no. of units.</string>
+
+    <string name="price">Price</string>
+    <string name="price_total">Total Price</string>
+    <string name="price_total_calculation">Total price = Unit price * No. of units.</string>
+
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="this_month">This Month</string>
+    <string name="all_time">All Time</string>
+
+    <string name="refresh_list">Refresh List</string>
+
+
+    <string name="expand">Expand</string>
+
+    <string name="no_internet_connect">No Internet Connection.</string>
+
+    <string name="deactivated">Deactivated.</string>
+
+    <string name="owner">Owner</string>
+
+    <string name="admin">Admin</string>
+
+    <string name="empty">Empty.</string>
+
+    <string name="or">OR</string>
+
+    <string name="by">By</string>
+
+    <string name="date">Date</string>
+
+    <string name="temporary">Temporary</string>
+
+    <string name="admins_only">Admins only</string>
+
+    <string name="previous_buy">Previous Buy</string>
+
+    <string name="earn_per_unit">earn per unit</string>
+
+    <string name="le">LE</string>
+
+    <string name="un">UN</string>
+
+    <string name="uncompleted">Uncompleted</string>
+
+    <string name="connecting">Connecting…</string>
+
+    <string name="read_remote_user">Reading remote user data…</string>
+
+    <string name="home">Home</string>
+
+    <string name="profile">Profile</string>
+
+    <string name="add">Add</string>
+
+    <string name="advanced_settings">Advanced Settings</string>
+
+    <string name="buy">Buy</string>
+    <string name="buy_cost">Buy\\Cost</string>
+    <string name="buy_quantity">Buy\\Quan</string>
+
+    <string name="sell">Sell</string>
+    <string name="sell_cost">Sell\\Cost</string>
+    <string name="sell_quantity">Sell\\Quan</string>
+
+    <string name="quantity">Quantity</string>
+
+    <string name="cost">Cost</string>
+
+    <string name="assets">Assets</string>
+
+    <string name="confirm">Confirm</string>
+
+    <string name="phone_num">Phone number</string>
+
+
+    <string name="share_item">Share as plain text</string>
+
+    <string name="name">name</string>
+
+</resources>

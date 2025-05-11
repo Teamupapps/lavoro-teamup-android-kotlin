@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation_graph"
+    app:startDestination="@id/loginView">
+
+    <fragment
+        android:id="@+id/loginView"
+        android:name="lavoro.teamup.authentication.login.LoginView"
+        android:label="LoginView"
+        tools:layout="@layout/view_authentication">
+        <action
+            android:id="@+id/navigate_to_signup"
+            app:destination="@id/signupView" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupView"
+        android:name="lavoro.teamup.authentication.signup.SignupView"
+        android:label="SignupView"
+        tools:layout="@layout/view_authentication">
+        <action
+            android:id="@+id/navigate_to_login"
+            app:destination="@id/loginView" />
+    </fragment>
+
+
+</navigation>

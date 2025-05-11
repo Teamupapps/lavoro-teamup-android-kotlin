@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="violet">#9C27B0</color>
+    <color name="violet_light">#BC00DC</color>
+
+    <color name="gray">#F7F7F7</color>
+    <color name="gray_light">#949393</color>
+
+    <color name="green">#5eab3d</color>
+    <color name="green_light">#E8FF00</color>
+
+    <color name="dark">#121212</color>
+    <color name="light">#FFFFFFFF</color>
+</resources>

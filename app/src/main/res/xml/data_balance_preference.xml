@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/balance">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:disableDependentsState="false"
+            android:key="USE_BALANCE"
+            android:summary="@string/balance_summary"
+            android:title="@string/balance_use" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:dependency="USE_BALANCE"
+            android:key="BALANCE_TODAY_ONLY"
+            android:summary="@string/transaction_list"
+            android:title="@string/balance_today" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

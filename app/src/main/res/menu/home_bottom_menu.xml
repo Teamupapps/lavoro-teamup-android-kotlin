@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/transactionListView"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/companyProfileView"
+        android:icon="@drawable/ic_info"
+        android:title="@string/assets" />
+    <item
+        android:id="@+id/transactionDetailsView"
+        android:icon="@drawable/ic_add"
+        android:title="@string/add" />
+    <item
+        android:id="@+id/transactionFilterView"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search" />
+    <item
+        android:id="@+id/userProfileView"
+        android:icon="@drawable/ic_user"
+        android:title="@string/profile" />
+</menu>

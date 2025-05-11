@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/transactions">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="USE_CLIENT_ENTRY"
+            android:summary="@string/client_entry_desc"
+            android:title="@string/client_entry" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="USE_PRODUCT_ENTRY"
+            android:summary="@string/product_entry_desc"
+            android:title="@string/product_entry" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation_graph"
+    app:startDestination="@id/transactionListView">
+
+    <fragment
+        android:id="@+id/transactionListView"
+        android:name="lavoro.teamup.transaction.itemlist.TransactionListView"
+        android:label="TransactionListView"
+        tools:layout="@layout/view_transaction_list">
+        <action
+            android:id="@+id/navigate_to_note_details"
+            app:destination="@id/noteDetailsView" />
+        <action
+            android:id="@+id/navigate_to_transaction_details"
+            app:destination="@id/transactionDetailsView" />
+        <action
+            android:id="@+id/navigate_to_note_preference"
+            app:destination="@id/dataNotePreferenceView" />
+        <action
+            android:id="@+id/navigate_to_stock_preference"
+            app:destination="@id/dataStockPreferenceView" />
+        <action
+            android:id="@+id/navigate_to_statics_preference"
+            app:destination="@id/dataStaticsPreferenceView" />
+        <action
+            android:id="@+id/navigate_to_balance_preference"
+            app:destination="@id/dataBalancePreferenceView" />
+        <action
+            android:id="@+id/navigate_to_transaction_list_preference"
+            app:destination="@id/transactionListPreference" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/transactionDetailsView"
+        android:name="lavoro.teamup.transaction.itemdetails.TransactionDetailsView"
+        android:label="TransactionDetailsView"
+        tools:layout="@layout/view_transaction_details">
+        <argument
+            android:name="itemId"
+            android:defaultValue=''
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/brandView"
+        android:name="lavoro.teamup.brandlist.BrandView"
+        android:label="BrandView"
+        tools:layout="@layout/view_data_expanded_list" />
+
+    <fragment
+        android:id="@+id/productView"
+        android:name="lavoro.teamup.productlist.ProductView"
+        android:label="ProductView"
+        tools:layout="@layout/view_data_expanded_list">
+        <action
+            android:id="@+id/navigateToBrand"
+            app:destination="@id/brandView" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/companyProfileView"
+        android:name="lavoro.teamup.companyprofile.CompanyProfileView"
+        android:label="TeamProfileView"
+        tools:layout="@layout/view_company_profile_list">
+        <action
+            android:id="@+id/navigateToCity"
+            app:destination="@id/cityView" />
+        <action
+            android:id="@+id/navigateToClient"
+            app:destination="@id/clientView" />
+        <action
+            android:id="@+id/navigateToProduct"
+            app:destination="@id/productView" />
+        <action
+            android:id="@+id/navigateToBrand"
+            app:destination="@id/brandView" />
+    </fragment>
+    <fragment
+        android:id="@+id/cityView"
+        android:name="lavoro.teamup.citylist.CityView"
+        android:label="CityView"
+        tools:layout="@layout/view_data_expanded_list" />
+    <fragment
+        android:id="@+id/clientView"
+        android:name="lavoro.teamup.clientlist.ClientView"
+        android:label="ClientView"
+        tools:layout="@layout/view_data_expanded_list">
+        <action
+            android:id="@+id/navigateToCity"
+            app:destination="@id/cityView" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteDetailsView"
+        android:name="lavoro.teamup.notedetails.NoteDetailsView"
+        android:label="NoteDetailsView"
+        tools:layout="@layout/view_note_details">
+
+        <argument
+            android:name="noteId"
+            android:defaultValue=''
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/navigateToTransactionList"
+            app:destination="@id/transactionListView" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileView"
+        android:name="lavoro.teamup.userprofile.profile.ProfileView"
+        android:label="UserProfileView"
+        tools:layout="@layout/view_user_profile_list">
+        <action
+            android:id="@+id/navigateToProfileDetails"
+            app:destination="@id/profileDetailsView" />
+        <action
+            android:id="@+id/navigateToTeam"
+            app:destination="@id/teamView" />
+    </fragment>
+    <fragment
+        android:id="@+id/teamView"
+        android:name="lavoro.teamup.teamlist.TeamView"
+        android:label="TeamView"
+        tools:layout="@layout/view_company_profile_list" />
+    <fragment
+        android:id="@+id/profileDetailsView"
+        android:name="lavoro.teamup.userprofile.profiledetails.ProfileDetailsView"
+        android:label="ProfileDetailsView"
+        tools:layout="@layout/view_profile_details" />
+    <fragment
+        android:id="@+id/transactionFilterView"
+        android:name="lavoro.teamup.transaction.filterlist.TransactionFilterView"
+        android:label="TransactionFilterView"
+        tools:layout="@layout/view_transaction_filter_list">
+        <action
+            android:id="@+id/navigate_to_transaction_details"
+            app:destination="@id/transactionDetailsView" />
+        <action
+            android:id="@+id/navigate_to_transaction_list"
+            app:destination="@id/transactionListView" />
+        <action
+            android:id="@+id/navigate_to_filter_preference"
+            app:destination="@id/transactionFilterListPreference" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataBalancePreferenceView"
+        android:name="lavoro.teamup.preferencesettings.DataBalancePreferenceView"
+        android:label="DataBalancePreferenceView" />
+    <fragment
+        android:id="@+id/dataNotePreferenceView"
+        android:name="lavoro.teamup.preferencesettings.DataNotePreferenceView"
+        android:label="DataNotePreferenceView" />
+    <fragment
+        android:id="@+id/dataStaticsPreferenceView"
+        android:name="lavoro.teamup.preferencesettings.DataStaticsPreferenceView"
+        android:label="DataStaticsPreferenceView" />
+    <fragment
+        android:id="@+id/dataStockPreferenceView"
+        android:name="lavoro.teamup.preferencesettings.DataStockPreferenceView"
+        android:label="DataStockPreferenceView" />
+    <fragment
+        android:id="@+id/advancedPreferenceView"
+        android:name="lavoro.teamup.preferencesettings.AdvancedPreferenceView"
+        android:label="AdvancedPreferenceView" />
+    <fragment
+        android:id="@+id/cachePreferenceView"
+        android:name="lavoro.teamup.preferencesettings.CachePreferenceView"
+        android:label="CachePreferenceView" />
+    <fragment
+        android:id="@+id/dataBackupsPreference"
+        android:name="lavoro.teamup.preferencesettings.DataBackupsPreference"
+        android:label="DataBackupsPreference" />
+    <fragment
+        android:id="@+id/datasourcePreference"
+        android:name="lavoro.teamup.preferencesettings.DatasourcePreference"
+        android:label="DatasourcePreference" />
+    <fragment
+        android:id="@+id/transactionFilterListPreference"
+        android:name="lavoro.teamup.preferencesettings.TransactionFilterListPreference"
+        android:label="TransactionFilterListPreference" />
+    <fragment
+        android:id="@+id/transactionListPreference"
+        android:name="lavoro.teamup.preferencesettings.TransactionListPreference"
+        android:label="TransactionListPreference" />
+</navigation>

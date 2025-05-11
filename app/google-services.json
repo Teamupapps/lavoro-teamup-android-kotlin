@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "627640555978",
+    "project_id": "teamup-business",
+    "storage_bucket": "teamup-business.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627640555978:android:7ddf2cf7ab34317c331733",
+        "android_client_info": {
+          "package_name": "lavoro.teamup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627640555978-ncnh3lticap89235q3vi8s04j2bldtvl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lavoro.teamup",
+            "certificate_hash": "283a2eda1ad42269b46a2edbf987e02d4cd43c4a"
+          }
+        },
+        {
+          "client_id": "627640555978-q0n5hln6t8rhb76cs6mac9eqss83g8lc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBplA4y15EXpOOL-4pUQzYfHi23dR6MtxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627640555978-q0n5hln6t8rhb76cs6mac9eqss83g8lc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

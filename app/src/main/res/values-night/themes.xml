@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="Base.Theme.TEAMUP" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/violet</item>
+        <item name="colorOnPrimary">@color/dark</item>
+        <item name="colorOnSecondary">@color/light</item>
+        <item name="colorAccent">@color/violet</item>
+
+        <item name="android:statusBarColor">?attr/colorOnPrimary</item>
+        <item name="android:windowBackground">?attr/colorOnPrimary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+
+</resources>

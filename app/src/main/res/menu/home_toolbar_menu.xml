@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_cache"
+        android:menuCategory="secondary"
+        android:title="@string/cache_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_advanced"
+        android:menuCategory="secondary"
+        android:title="@string/advanced_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_backups"
+        android:menuCategory="secondary"
+        android:title="@string/backups_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_datasource"
+        android:menuCategory="secondary"
+        android:title="@string/datasource_connection"
+        app:showAsAction="never" />
+</menu>

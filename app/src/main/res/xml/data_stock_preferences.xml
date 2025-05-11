@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/stock_list">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="USE_STOCK"
+            android:summary="@string/stock_summary"
+            android:title="@string/stock_use" />
+    </PreferenceCategory>
+</PreferenceScreen>

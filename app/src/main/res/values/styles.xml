@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="_verticalMatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="_baseViewContainer" parent="_verticalMatchParent">
+        <item name="android:padding">@dimen/base_view_padding</item>
+    </style>
+
+    <style name="_baseViewHomeContainer" parent="_verticalMatchParent">
+        <item name="android:padding">@dimen/base_view_home_padding</item>
+    </style>
+
+    <style name="_grayContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/item_rounded_layout_gray</item>
+        <item name="android:padding">@dimen/base_view_home_padding</item>
+    </style>
+
+    <style name="_greenContainer" parent="_grayContainer">
+        <item name="android:background">@drawable/item_rounded_layout_green</item>
+    </style>
+
+    <style name="_GreenNoteContainer" parent="_greenContainer">
+        <item name="android:layout_width">@dimen/item_note_width</item>
+    </style>
+
+    <style name="_stockContainer" parent="_grayContainer">
+        <item name="android:layout_width">@dimen/item_stock_width</item>
+    </style>
+
+    <style name="_staticsContainer" parent="_verticalMatchParent">
+        <item name="android:layout_width">@dimen/item_statics_width</item>
+        <item name="android:padding">@dimen/base_item_padding</item>
+    </style>
+
+
+    <style name="_balanceContainer" parent="_verticalMatchParent">
+        <item name="android:layout_width">@dimen/item_balance_width</item>
+        <item name="android:padding">@dimen/base_item_padding</item>
+    </style>
+
+    <style name="_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:textColor">@color/gray_light</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="_hintTitle" parent="_title">
+        <item name="android:textSize">@dimen/title_hint_size</item>
+        <item name="android:textColor">@color/gray_light</item>
+        <item name="android:layout_marginStart">@dimen/text_hint_margin</item>
+        <item name="android:layout_marginEnd">@dimen/text_hint_margin</item>
+        <item name="android:maxLines">@integer/title_hint_max_lines</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="_noteTitle" parent="_title">
+        <item name="android:textColor">@color/violet</item>
+    </style>
+
+    <style name="_hintBtnTitle" parent="_title">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/base_item_margin</item>
+    </style>
+
+    <style name="_darkBoldTitle" parent="_title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/dark</item>
+    </style>
+
+    <style name="_numTitle" parent="_title">
+        <item name="android:textSize">@dimen/title_num_size</item>
+        <item name="android:drawablePadding">@dimen/title_num_drawable_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="_NumTitleBold" parent="_numTitle">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="_singleLineTitle" parent="_title">
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="_headTitle" parent="_title">
+        <item name="android:textSize">@dimen/title_head_size</item>
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+    </style>
+
+    <style name="_headTitleBold" parent="_headTitle">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="_fontTitle" parent="_title">
+        <item name="android:textSize">@dimen/title_font_size</item>
+        <item name="android:fontFamily">@font/tango_bold</item>
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+    </style>
+
+    <style name="_spinnerItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/item_border_gray</item>
+        <item name="android:padding">@dimen/base_item_padding</item>
+        <item name="android:layout_marginBottom">@dimen/base_item_margin</item>
+    </style>
+
+    <style name="_floatingBtn">
+        <item name="android:layout_width">@dimen/fab_size</item>
+        <item name="android:layout_height">@dimen/fab_size</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:backgroundTint">@color/violet</item>
+    </style>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="input_city_max_length">16</integer>
+    <integer name="input_client_max_length">16</integer>
+    <integer name="input_phone_max_length">16</integer>
+    <integer name="input_brand_max_length">16</integer>
+    <integer name="input_product_max_length">16</integer>
+
+    <integer name="title_max_lines">2</integer>
+    <integer name="title_desc_max_lines">4</integer>
+    <integer name="title_hint_max_lines">1</integer>
+
+    <integer name="title_note_max_lines">4</integer>
+    <integer name="title_desc_note_max_lines">2</integer>
+
+    <integer name="item_statics_title_lines">1</integer>
+    <integer name="item_balance_title_lines">1</integer>
+
+    <integer name="auto_edittext_ems">10</integer>
+
+
+</resources>

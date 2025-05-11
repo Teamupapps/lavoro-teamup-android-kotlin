@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="base_view_padding">@dimen/_20sdp</dimen>
+    <dimen name="base_view_home_padding">@dimen/_10sdp</dimen>
+
+    <dimen name="base_space_height_distance">@dimen/_5sdp</dimen>
+    <dimen name="base_space_height_max_distance">@dimen/_10sdp</dimen>
+
+    <dimen name="base_item_padding">@dimen/_10sdp</dimen>
+    <dimen name="base_item_margin">@dimen/_5sdp</dimen>
+    <dimen name="base_item_radius">@dimen/_5sdp</dimen>
+
+    <dimen name="title_size">@dimen/_12ssp</dimen>
+    <dimen name="title_head_size">@dimen/_14ssp</dimen>
+    <dimen name="title_font_size">@dimen/_14ssp</dimen>
+    <dimen name="title_num_size">@dimen/_14ssp</dimen>
+    <dimen name="title_hint_size">@dimen/_10ssp</dimen>
+
+    <dimen name="img_action_size">@dimen/_20sdp</dimen>
+    <dimen name="img_action_margin">@dimen/_2sdp</dimen>
+
+    <dimen name="fab_size">@dimen/_40sdp</dimen>
+    <dimen name="fab_elevation">@dimen/_2sdp</dimen>
+
+    <dimen name="search_card_radius">@dimen/_5sdp</dimen>
+    <dimen name="search_card_elevation">@dimen/_5sdp</dimen>
+
+    <dimen name="text_hint_margin">@dimen/_2sdp</dimen>
+    <dimen name="text_hint_drawable_padding">@dimen/_2sdp</dimen>
+
+    <dimen name="item_note_width">@dimen/_160sdp</dimen>
+    <dimen name="item_stock_width">@dimen/_160sdp</dimen>
+    <dimen name="item_balance_width">@dimen/_110sdp</dimen>
+    <dimen name="item_statics_width">@dimen/_80sdp</dimen>
+
+    <dimen name="toolbar_padding">@dimen/_10sdp</dimen>
+
+    <dimen name="bottom_sheet_peek_height">@dimen/_50sdp</dimen>
+
+    <dimen name="progress_bar_size">@dimen/_40sdp</dimen>
+
+    <dimen name="img_user_size">@dimen/_70sdp</dimen>
+
+    <dimen name="title_update_size">@dimen/_14ssp</dimen>
+
+    <dimen name="title_num_drawable_padding">@dimen/_2sdp</dimen>-->
+
+</resources>

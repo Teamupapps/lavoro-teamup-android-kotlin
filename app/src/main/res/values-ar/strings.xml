@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TeamupApp</string>
+    <string name="app_name_organization">TeamupApps - Business\'s Finances</string>
+
+    <string name="email">البريد الألتكروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="login">تسجيل دخول</string>
+    <string name="logout">تسجيل خروج</string>
+    <string name="login_status">تسجيل الدخول؟</string>
+    <string name="continue_with_google">أستمرار بواسطة جوجل؟</string>
+    <string name="create_account">أنشئ مستخدم جديد؟</string>
+    <string name="signed_in_success">تم التسجيل بنجاح.</string>
+
+    <string name="permission_granted_storage">تم منح إذن الوصول للذاكرة</string>
+    <string name="permission_denied_storage">لم يتم منح إذن الوصول للذاكرة</string>
+
+    <string name="statics">الإحصائيات</string>
+    <string name="statics_use">عرض الإحصائيات.</string>
+    <string name="statics_summary">استخدم الإحصائيات المباشرة لحساب إجمالي البيانات تلقائيًا.</string>
+    <string name="statistics_error">تعذر قراءة الإحصائيات.</string>
+
+    <string name="server">الخادم</string>
+    <string name="server_use">أستخدم خادمًا خاص.</string>
+    <string name="server_summary">استخدم خادمنا البعيد لمشاركة البيانات مع فريقك، وتتبع رصيدك، وإدارة شؤونك المالية.</string>
+    <string name="server_disabled">الخادم معطل.</string>
+
+    <string name="datasource">مصدر البيانات</string>
+    <string name="datasource_connection">أتصال بمصدر البيانات</string>
+
+    <string name="cached">مخزن مؤقتا</string>
+    <string name="cache_settings">التخزين المؤقت</string>
+    <string name="cache">التخزين المؤقت</string>
+    <string name="cache_reset">إعادة ضبط وقت التخزين</string>
+    <string name="cache_clear">حذف ذاكرة التخزين المؤقت</string>
+    <string name="cache_time_setup">تعيين الحد الأقصى لوقت التخزين المؤقت لقائمة العناصر الرئيسية،الأفتراضي هو 10 دقائق.</string>
+
+    <string name="backups">النسخ التلقائي</string>
+    <string name="backups_settings">النسخ التلقائي</string>
+    <string name="backups_use">السماح بالنسخ التلقائي للبيانات.</string>
+    <string name="backups_summary">أسمح للتطبيق بأسترداد نسخة أحتياطية للبيانات كل وقت محدد.</string>
+    <string name="backups_setup">تم إعداد النسخ الأحتياطي للنسخ الأحتياطي التلقائي للبيانات.</string>
+    <string name="backups_canceled">إلغاء النسخ الاحتياطي.</string>
+    <string name="backups_alarm_error">خطأ أثناء إعداد النسخ الأحتياطية للبيانات.</string>
+    <string name="backups_start">بدأ النسخ التلقائي للبيانات…</string>
+
+    <string name="sync_setup">إعداد المزامنة.</string>
+    <string name="sync_success">تم مزامنة المستخدم بنجاح.</string>
+    <string name="sync_error">خطأ أثناء مزامنة المستخدم.</string>
+
+    <string name="unauthorized">غير معتمد.</string>
+    <string name="unauthorized_summary">غير معتمد به. يتم استخدام قاعدة بيانات محلية.</string>
+    <string name="unauthorized_check_user">التحقق من وجود مستخدم معتمد…</string>
+
+    <string name="filter">تصفية</string>
+    <string name="filtered">تصفية</string>
+    <string name="filter_by_month">تصفية خلال هذا اليوم.</string>
+    <string name="filter_by_active">تصفية العناصر النشطة.</string>
+    <string name="filter_by_sell">تصفية عناصر البيع.</string>
+    <string name="filter_by_month_summary">قم بتصفية البيانات وعملية البحث خلال هذا الشهر فقط.</string>
+    <string name="filter_by_active_summary">تصفية البيانات وعملية البحث حسب العناصر النشطة فقط.</string>
+    <string name="filter_by_sell_summary">قم بتصفية البيانات وعملية البحث حسب عناصر البيع فقط.</string>
+
+    <string name="notes_use">أستخدم ملاحظات العمل.</string>
+    <string name="notes_summary">إنشاء وتحديث وحذف الملاحظات لفريقك.</string>
+
+    <string name="share_suggest">أقتراح تلقائي لمشاركة البيانات.</string>
+    <string name="share_summary">أقتراح تلقائي لمشاركة العنصر في كل مرة يتم فيها تحديث العنصر بنجاح.</string>
+
+    <string name="add_suggest">أقتراح تلقائي لإضافة البيانات.</string>
+    <string name="add_summary">أقتراح تلقائي لإضافة البيانات في كل مرة يتم فيها أكتشاف قائمة فارغة.</string>
+
+    <string name="update">تحديث</string>
+    <string name="update_item">تحديث البيانات</string>
+    <string name="update_summary">قراءة وتحديث وحذف البيانات.</string>
+    <string name="update_by">تحديث بواسطة</string>
+    <string name="update_date">تاريخ</string>
+    <string name="updated_success">تم التحديث بنجاح</string>
+    <string name="update_profile">تحديث الملف الشخصي</string>
+    <string name="update_team"> تحديث بيانات الفريق</string>
+    <string name="update_transaction">أضافة معاملة</string>
+
+    <string name="delete">حذف</string>
+    <string name="delete_permanently">حذف نهائيا</string>
+
+    <string name="balance">الرصيد</string>
+    <string name="balance_total">الرصيد الكلي</string>
+    <string name="balance_use">حساب رصيد الكلي.</string>
+    <string name="balance_summary">استخدم رصيد الكلي لحساب إجمالي البيانات تلقائيًا.</string>
+    <string name="balance_today">رصيد عناصر اليوم فقط.</string>
+    <string name="balance_active">رصيد العناصر النشطة فقط.</string>
+    <string name="balance_all">الكل</string>
+    <string name="balance_read_error">تعذر قراءة الرصيد.</string>
+
+    <string name="city">أسم المدينة</string>
+    <string name="city_select">أختر مدينة</string>
+    <string name="city_search">أبحث عن المدينة أو الولاية أو موقع العمل.</string>
+    <string name="city_list">قائمة المدن</string>
+    <string name="city_list_desc">يستخدم مع العملاء كموقع عمل.</string>
+    <string name="city_list_empty">قائمة المدن فارغة.</string>
+    <string name="city_list_error">خطأ في أستردادالمدن.</string>
+
+    <string name="brand">شركة</string>
+    <string name="brand_select">أختر شركة</string>
+    <string name="brands_search">أبحث عن شركة حسب الأسم أوعلامة تجارية.</string>
+    <string name="brand_list">قائمة الشركات</string>
+    <string name="brand_list_desc">يستخدم مع المنتجات كعلامة تجارية.</string>
+    <string name="brand_list_empty">قائمة الشركات فارغة.</string>
+    <string name="brand_list_error">خطأ في أسترداد بيانات الشركات.</string>
+
+
+    <string name="client">العميل</string>
+    <string name="client_select">أختر عميل</string>
+    <string name="clients_search">أبحث عن العملاء حسب الأسم أو الهاتف أو موقع العمل.</string>
+    <string name="client_list">قائمة العملاء</string>
+    <string name="client_list_desc">يستخدم كطرف ثانٍ للمعاملات.</string>
+    <string name="client_list_empty">قائمة العملاء فارغة.</string>
+    <string name="client_list_error">خطأ في أسترداد بيانات العملاء.</string>
+    <string name="client_dial">أتصال</string>
+    <string name="client_entry">أستخدم العملاء</string>
+    <string name="client_entry_desc">أستخدام العملاء كجزء أساسي في المعاملات</string>
+
+    <string name="product">منتج</string>
+    <string name="product_select">أختر منتج</string>
+    <string name="products_search">أبحث عن منتج</string>
+    <string name="product_list">قائمات المنتجات</string>
+    <string name="product_list_desc">يستخدم كطرف ثانٍ للمعاملات.</string>
+    <string name="product_list_empty">قائمة المنتجات فارغة.</string>
+    <string name="product_list_error">خطأ في أسترداد المنتجات.</string>
+    <string name="product_entry">أستخدم المنتجات</string>
+    <string name="product_entry_desc">أستخدام المنتجات كجزء أساسي في المعاملات</string>
+
+    <string name="note">ملاحظة</string>
+    <string name="notes">الملاحظات</string>
+    <string name="notes_list">قائمة الملاحظات</string>
+    <string name="note_list_error">خطأ في أستردادالملاحظات.</string>
+    <string name="note_hint">سيتلقى فريقك فقط هذه التعليمات أو الملاحظات.</string>
+
+    <string name="team">فريقي</string>
+    <string name="team_search">أبحث عن مستخدم.</string>
+    <string name="team_list">فريق</string>
+    <string name="team_list_desc">تفعيل وإلغاء تفعيل الفريق.</string>
+    <string name="team_error">خطأ في أسترداد بيانات الفريق.</string>
+
+    <string name="transactions">المعاملات</string>
+    <string name="transaction_list">قائمة المعاملات</string>
+    <string name="transaction_list_error">خطأ في أستردادالمعاملات.</string>
+    <string name="transaction_hint">سيتلقى أعضاء فريقك النشطون فقط هذه التحديثات.</string>
+    <string name="transaction_note_hint">أرفق ملاحظة.</string>
+
+    <string name="stock">الخزنة</string>
+    <string name="stock_list">الخزنة</string>
+    <string name="stock_list_error">خطأ في أسترداد بيانات الخزنة.</string>
+    <string name="stock_use">استخدم المخزون الحالي.</string>
+    <string name="stock_summary">استخدم إحصاءات المخزون لحساب إجمالي كمية الأصول ورصيد المخزون الإجمالي تلقائيًا.</string>
+
+    <string name="unable_to_sign_out">تعذر إكمال عملية تسجيل الخروج.</string>
+    <string name="unable_to_sign_in">تعذر إكمال عملية تسجيل الدخول.</string>
+    <string name="unable_to_sign_up">تعذر إكمال عملية تسجيل المستخدم.</string>
+
+    <string name="cannot_find_auth_user">تعذر العثور على مستخدم مسجل.</string>
+    <string name="cannot_read_local_data">لا يمكن قراءة البيانات المحلية.</string>
+    <string name="cannot_read_remote_data">لا يمكن قراءة البيانات البعيدة.</string>
+    <string name="cannot_update_remote_data">لا يمكن تحديث البيانات البعيدة.</string>
+    <string name="cannot_update_local_entries">لا يمكن تحديث البيانات المحلية.</string>
+    <string name="cannot_update_entries">لا يمكن تحديث البيانات.</string>
+
+    <string name="invalid">غير صالح.</string>
+    <string name="invalid_name">غير صالح.</string>
+    <string name="invalid_cost">غير صالح.</string>
+    <string name="invalid_credentials">بيانات اعتماد غير صالحة.</string>
+    <string name="invalid_phone_num">رقم الهاتف غير صالح.</string>
+    <string name="invalid_phone_num_format">تنسيق رقم الهاتف غير صالح.</string>
+
+    <string name="exporting">جاري تصدير البيانات…</string>
+    <string name="export_list">تصدير نسخة البيانات </string>
+    <string name="export_success">.تم تصدير البيانات.</string>
+    <string name="export_summary">قم بتصدير نسخة من قائمة البيانات الخاصة بك كملف Excel أحتياطي.</string>
+    <string name="export_error">خطأ أثناء تصدير نسخة من قائمة البيانات.</string>
+
+    <string name="search">بحث</string>
+    <string name="search_by_date">أبحث حسب تاريخ الإنشاء أو التحديث…</string>
+
+    <string name="copy_success">تمت نسخها إلى الحافظة.</string>
+    <string name="copy_as_text">نسخ كنص عادي</string>
+
+    <string name="unit_price">سعر الوحدة</string>
+    <string name="unit_total_no">عدد الوحدات</string>
+    <string name="unit_price_calculation">سعر الوحدة = السعر الإجمالي / عدد الوحدات.</string>
+
+    <string name="price">السعر</string>
+    <string name="price_total">السعر الإجمالي</string>
+    <string name="price_total_calculation">السعر الإجمالي = سعر الوحدة * عدد الوحدات.</string>
+
+    <string name="today">اليوم</string>
+    <string name="yesterday">أمس</string>
+    <string name="this_month">هذا الشهر</string>
+    <string name="all_time">الكل</string>
+
+    <string name="refresh_list">تحديث القائمة</string>
+
+    <string name="expand">عرض القائمة</string>
+
+    <string name="no_internet_connect">لا يوجد اتصال بالإنترنت.</string>
+
+    <string name="deactivated">مُعطّل.</string>
+
+    <string name="owner">المالك</string>
+
+    <string name="admin">المسؤول</string>
+
+    <string name="empty">فارغ.</string>
+
+    <string name="or">OR</string>
+
+    <string name="by">بواسطة</string>
+
+    <string name="date">التاريخ</string>
+
+    <string name="temporary">مؤقت</string>
+
+    <string name="admins_only">للمسؤولين فقط</string>
+
+    <string name="previous_buy">الشراء السابق</string>
+
+    <string name="earn_per_unit">ربح لكل وحدة</string>
+
+    <string name="le">جنيه</string>
+
+    <string name="un">وحده</string>
+
+    <string name="uncompleted">غير مكتمل</string>
+
+    <string name="connecting">جارٍ الاتصال…</string>
+
+    <string name="read_remote_user">جارٍ قراءة بيانات المستخدم البعيد…</string>
+
+    <string name="home">الرئيسية</string>
+
+    <string name="profile">الملف الشخصي</string>
+
+    <string name="add">إضافة</string>
+
+    <string name="advanced_settings">إعدادات متقدمة</string>
+
+    <string name="buy">شراء</string>
+    <string name="buy_cost">تكلفة\\الشراء</string>
+    <string name="buy_quantity">كمية\\الشراء</string>
+
+    <string name="sell">بيع</string>
+    <string name="sell_cost">تكلفة\\البيع</string>
+    <string name="sell_quantity">كمية\\البيع</string>
+
+    <string name="quantity">الكمية</string>
+
+    <string name="cost">التكلفة</string>
+
+    <string name="assets">الأصول</string>
+
+    <string name="confirm">تأكيد</string>
+
+    <string name="phone_num">رقم الهاتف</string>
+
+    <string name="share_item">مشاركة كنص عادي</string>
+
+    <string name="name">الأسم</string>
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/filter">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="TRANS_FILTER_WITHIN_MONTH"
+            android:summary="@string/filter_by_month_summary"
+            android:title="@string/filter_by_month" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="TRANS_FILTER_SELL"
+            android:summary="@string/filter_by_sell_summary"
+            android:title="@string/filter_by_sell" />
+    </PreferenceCategory>
+</PreferenceScreen>
