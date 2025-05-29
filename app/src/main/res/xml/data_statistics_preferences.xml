@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="@string/balance">
+    <PreferenceCategory android:title="@string/statistics">
         <SwitchPreference
             android:defaultValue="true"
-            android:disableDependentsState="false"
-            android:key="USE_BALANCE"
-            android:summary="@string/balance_summary"
-            android:title="@string/balance_use" />
-
+            android:key="USE_STATISTICS"
+            android:summary="@string/statistics_summary"
+            android:title="@string/statistics_use" />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/data_display">
         <SwitchPreference
             android:defaultValue="true"
-            android:dependency="USE_BALANCE"
-            android:key="BALANCE_TODAY_ONLY"
+            android:dependency="USE_STATISTICS"
+            android:key="STATISTICS_TODAY_ONLY"
             android:summary="@string/filter_by_today_summary"
-            android:title="@string/balance_today" />
-
+            android:title="@string/statistics_today" />
     </PreferenceCategory>
-
-
 </PreferenceScreen>

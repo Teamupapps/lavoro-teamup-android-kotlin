@@ -62,9 +62,6 @@ class NoteAdapter(
                     R.id.update_item_menu -> event.value =
                         BaseTransactionListUtilViewEvent.OnNoteItemClick(pos = position)
 
-                    R.id.refresh_menu -> event.value =
-                        BaseTransactionListUtilViewEvent.OnMenuNoteListRefresh
-
                     R.id.delete_menu -> context.displayDeleteAlertDialog {
                         event.value = BaseTransactionListUtilViewEvent.OnMenuNoteListDelete(
                             pos = position

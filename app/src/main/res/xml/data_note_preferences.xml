@@ -6,6 +6,13 @@
             android:key="USE_NOTES"
             android:summary="@string/notes_summary"
             android:title="@string/notes_use" />
-
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/data_display">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:dependency="USE_NOTES"
+            android:key="NOTES_TODAY_ONLY"
+            android:summary="@string/filter_by_today_summary"
+            android:title="@string/notes_today" />
     </PreferenceCategory>
 </PreferenceScreen>

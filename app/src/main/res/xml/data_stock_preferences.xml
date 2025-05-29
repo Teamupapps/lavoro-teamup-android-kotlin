@@ -7,4 +7,12 @@
             android:summary="@string/stock_summary"
             android:title="@string/stock_use" />
     </PreferenceCategory>
+    <PreferenceCategory android:title="@string/data_display">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:dependency="USE_STOCK"
+            android:key="STOCK_TODAY_ONLY"
+            android:summary="@string/filter_by_today_summary"
+            android:title="@string/stock_today" />
+    </PreferenceCategory>
 </PreferenceScreen>

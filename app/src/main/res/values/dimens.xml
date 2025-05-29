@@ -31,7 +31,7 @@
     <dimen name="item_note_width">@dimen/_160sdp</dimen>
     <dimen name="item_stock_width">@dimen/_160sdp</dimen>
     <dimen name="item_balance_width">@dimen/_110sdp</dimen>
-    <dimen name="item_statics_width">@dimen/_80sdp</dimen>
+    <dimen name="item_statics_width">@dimen/_90sdp</dimen>
 
     <dimen name="toolbar_padding">@dimen/_10sdp</dimen>
 

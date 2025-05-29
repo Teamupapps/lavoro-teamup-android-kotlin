@@ -17,4 +17,7 @@ interface HomeActivityInteract {
         actionText: String? = null,
         action: (() -> Unit)? = null
     )
+    fun checkWriteStoragePermission(
+        action: (() -> Unit)? = null
+    )
 }

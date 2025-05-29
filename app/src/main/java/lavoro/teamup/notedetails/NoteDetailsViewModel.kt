@@ -18,7 +18,7 @@ import lavoro.teamup.data.model.entry.HistoryEntry
 import lavoro.teamup.data.model.note.Note
 import lavoro.teamup.data.repository.NoteRepository
 
-class NoteViewModel(
+class NoteDetailsViewModel(
     private val noteRepository: NoteRepository,
     savedStateHandle: SavedStateHandle
 ) : BaseViewModel<NoteDetailsViewEvent>() {
@@ -39,10 +39,15 @@ class NoteViewModel(
         when (event) {
             is NoteDetailsViewEvent.OnStartGetNote -> navNoteId?.let {
 
-                updateAdministrationState(isAdmin = false)
+                if (it.isBlank()) {
+                    updateAdministrationState(isAdmin = false)
 
-                if (it.isBlank()) setupNewNote()
-                else getNote(it)
+                    setupNewNote()
+                } else {
+                    getNote(noteId = it, resultAction = {
+                        updateAdministrationState(isAdmin = noteState.value?.onlyAdmins ?: false)
+                    })
+                }
             }
 
             is NoteDetailsViewEvent.OnUpdateTxtClick -> updateNote(event.title)
@@ -55,7 +60,10 @@ class NoteViewModel(
         noteState.value = Note("", "", HistoryEntry("", ""), false)
     }
 
-    private fun getNote(noteId: String) = viewModelScope.launch {
+    private fun getNote(
+        noteId: String,
+        resultAction: (() -> Unit)? = null
+    ) = viewModelScope.launch {
         showLoading()
         when (val result = noteRepository.getNoteById(noteId)) {
             is Result.Error -> result.error.message.actionExceptionMsg(error = {
@@ -65,7 +73,7 @@ class NoteViewModel(
             is Result.Value -> {
                 noteState.value = result.value
 
-                updateAdministrationState(isAdmin = result.value.onlyAdmins)
+                resultAction?.invoke()
 
             }
         }

@@ -31,10 +31,7 @@ class LoginViewModel(
 
     override fun handleEvent(event: AuthenticationViewEvent<LoginResult>) {
         when (event) {
-            is AuthenticationViewEvent.GetAuthUser -> {
-                getAuthenticatedUser()
-            }
-
+            is AuthenticationViewEvent.GetAuthUser -> getAuthenticatedUser()
             is AuthenticationViewEvent.OnAuthBtnClick -> googleAuthAttempt.value = Unit
             is AuthenticationViewEvent.OnGoogleSignInResult -> onSignInResult(event.result)
             is AuthenticationViewEvent.OnLoginBtnClick -> login(event.email, event.pass)

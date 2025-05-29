@@ -7,7 +7,6 @@ import android.app.PendingIntent
 import android.app.TaskStackBuilder
 import android.content.Context
 import android.content.Intent
-import android.os.Build
 import androidx.core.app.NotificationCompat
 import lavoro.teamup.R
 import lavoro.teamup.home.HomeActivity

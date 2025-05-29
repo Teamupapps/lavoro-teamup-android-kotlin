@@ -34,11 +34,8 @@ internal val RemoteUser.toUser: User
         name = this.name ?: "guest",
         email = this.email ?: "guest@teamup",
         phone = this.phone ?: "",
-        roleId = if (this.email?.isOwnerEmail() == true) ROLE_OWNER
-        else if (this.email?.isAdminEmail() == true) ROLE_ADMIN else ROLE_TEAM,
-        activated = if (this.email?.isOwnerEmail() == true ||
-            this.email?.isAdminEmail() == true
-        ) true else false
+        roleId = this.roleId ?: ROLE_TEAM,
+        activated = this.activated ?: false
     )
 internal val RoomUser.toUser: User
     get() = User(

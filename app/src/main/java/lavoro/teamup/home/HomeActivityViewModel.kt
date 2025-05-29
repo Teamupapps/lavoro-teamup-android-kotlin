@@ -90,7 +90,7 @@ class HomeActivityViewModel(
                     )
                 } else {
                     updateToolbarActionTitle(R.string.sync_setup)
-                    checkIfUpdateLocalRequired(newUser = remoteUser)
+                    updateLocalUser(newUser = remoteUser)
                 }
 
                 requestPermissions()
@@ -99,7 +99,7 @@ class HomeActivityViewModel(
         hideLoading()
     }
 
-    private fun checkIfUpdateLocalRequired(newUser: User) = viewModelScope.launch {
+    private fun updateLocalUser(newUser: User) = viewModelScope.launch {
         if (userRepository.updateLocalUser(user = newUser) is Result.Value) updateToolbarActionTitle(
             resId = R.string.sync_success
         )

@@ -15,7 +15,6 @@ internal const val ROLE_TEAM = 3
 
 internal const val DELAY_VIEW_EXPAND = 400L
 
-internal const val STORAGE_PERMISSION_CODE = 101
 internal const val SIGN_IN_REQUEST_CODE = 1227
 
 internal const val CURRENT_USER_ID = 0
@@ -33,3 +32,5 @@ internal const val TRANSACTION_CACHE_TIME = "ITEM_CACHE_TIME"
 
 internal const val STOP_SERVICE = "STOP_SERVICE"
 internal const val ACTION_DATA_BACKUPS = "ACTION_TRANS_DATA_BACKUPS"
+
+internal const val STORAGE_PERMISSION_CODE = 101

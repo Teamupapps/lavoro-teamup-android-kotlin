@@ -155,7 +155,7 @@
         android:label="DataNotePreferenceView" />
     <fragment
         android:id="@+id/dataStaticsPreferenceView"
-        android:name="lavoro.teamup.preferencesettings.DataStaticsPreferenceView"
+        android:name="lavoro.teamup.preferencesettings.DataStatisticsPreferenceView"
         android:label="DataStaticsPreferenceView" />
     <fragment
         android:id="@+id/dataStockPreferenceView"

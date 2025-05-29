@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="@string/transactions">
+
+    <PreferenceCategory android:title="@string/transaction_list">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="TRANSACTION_TODAY_ONLY"
+            android:summary="@string/filter_by_today_summary"
+            android:title="@string/transactions_today" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/update_transaction">
         <SwitchPreference
             android:defaultValue="false"
             android:key="USE_CLIENT_ENTRY"

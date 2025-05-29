@@ -18,7 +18,6 @@ import lavoro.teamup.data.preference.datalist.CityPreferenceImpl
 import lavoro.teamup.data.preference.datalist.ClientPreferenceImpl
 import lavoro.teamup.data.preference.datalist.NotePreferenceImpl
 import lavoro.teamup.data.preference.datalist.ProductPreferenceImpl
-import lavoro.teamup.data.preference.transaction.TransactionPreferenceImpl
 import lavoro.teamup.data.preference.util.UtilPreferenceImpl
 import lavoro.teamup.data.room.TeamDatabase
 
@@ -43,7 +42,6 @@ open class BaseViewInjector(
     private fun brandPreference() = BrandPreferenceImpl(getApplication())
     private fun productPreference() = ProductPreferenceImpl(getApplication())
     private fun notePreference() = NotePreferenceImpl(getApplication())
-    private fun transactionPreference() = TransactionPreferenceImpl(getApplication())
 
     protected fun connectInterceptor() = ConnectivityInterceptorImpl(getApplication())
 
@@ -93,14 +91,17 @@ open class BaseViewInjector(
         connectInterceptor = connectInterceptor()
     )
 
-    protected fun getTeamRepository() = TeamRepositoryImpl()
+    protected fun getTeamRepository() = TeamRepositoryImpl(
+        localUser = userDao(),
+        utilPreference = utilPreference(),
+        connectInterceptor = connectInterceptor()
+    )
 
     protected fun getPreferenceRepository() = PreferenceRepositoryImpl(
         localDB = TeamDatabase.invoke(getApplication()),
         utilPreference = utilPreference(),
         cachePreference = cachePreference(),
         advancedPreference = advancedPreference(),
-        transactionPreference = transactionPreference()
     )
 
 }

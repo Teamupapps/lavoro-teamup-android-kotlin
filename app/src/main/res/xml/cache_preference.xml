@@ -1,48 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory android:title="@string/cache">
-        <EditTextPreference
-            android:defaultValue="4"
-            android:key="CITY_CACHE_TIME"
-            android:summary="@string/cache_time_setup"
-            android:title="@string/city_list" />
-        <EditTextPreference
-            android:defaultValue="4"
-            android:key="CLIENT_CACHE_TIME"
-            android:summary="@string/cache_time_setup"
-            android:title="@string/client_list" />
-        <EditTextPreference
-            android:defaultValue="4"
-            android:key="PRODUCT_CACHE_TIME"
-            android:summary="@string/cache_time_setup"
-            android:title="@string/product_list" />
-        <EditTextPreference
-            android:defaultValue="4"
-            android:key="COMPANY_CACHE_TIME"
-            android:summary="@string/cache_time_setup"
-            android:title="@string/brand_list" />
-        <EditTextPreference
-            android:defaultValue="10"
-            android:key="NOTE_CACHE_TIME"
-            android:summary="@string/cache_time_setup"
-            android:title="@string/notes_list" />
-        <EditTextPreference
-            android:defaultValue="10"
-            android:key="TRANSACTION_CACHE_TIME"
-            android:summary="@string/cache_time_setup"
-            android:title="@string/transaction_list" />
-        <EditTextPreference
-            android:defaultValue="10"
-            android:key="STOCK_CACHE_TIME"
-            android:summary="@string/cache_time_setup"
-            android:title="@string/stock_list" />
-    </PreferenceCategory>
-    <PreferenceCategory>
         <Preference
             android:key="CLEAR CACHE"
             android:title="@string/cache_clear" />
         <Preference
             android:key="RESET CACHE"
             android:title="@string/cache_reset" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/cache">
+        <EditTextPreference
+            android:defaultValue="4"
+            android:key="CITY_CACHE_TIME"
+            android:summary="@string/cache_time_setup_4_h"
+            android:title="@string/city_list" />
+        <EditTextPreference
+            android:defaultValue="4"
+            android:key="CLIENT_CACHE_TIME"
+            android:summary="@string/cache_time_setup_4_h"
+            android:title="@string/client_list" />
+        <EditTextPreference
+            android:defaultValue="4"
+            android:key="PRODUCT_CACHE_TIME"
+            android:summary="@string/cache_time_setup_4_h"
+            android:title="@string/product_list" />
+        <EditTextPreference
+            android:defaultValue="4"
+            android:key="COMPANY_CACHE_TIME"
+            android:summary="@string/cache_time_setup_4_h"
+            android:title="@string/brand_list" />
+        <EditTextPreference
+            android:defaultValue="10"
+            android:key="NOTE_CACHE_TIME"
+            android:summary="@string/cache_time_setup_10_min"
+            android:title="@string/notes_list" />
+        <EditTextPreference
+            android:defaultValue="10"
+            android:key="TRANSACTION_CACHE_TIME"
+            android:summary="@string/cache_time_setup_10_min"
+            android:title="@string/transaction_list" />
+        <EditTextPreference
+            android:defaultValue="10"
+            android:key="STOCK_CACHE_TIME"
+            android:summary="@string/cache_time_setup_10_min"
+            android:title="@string/stock_list" />
     </PreferenceCategory>
 </PreferenceScreen>

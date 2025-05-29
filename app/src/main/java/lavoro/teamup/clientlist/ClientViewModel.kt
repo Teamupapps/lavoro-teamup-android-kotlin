@@ -78,7 +78,9 @@ class ClientViewModel(
 
     private fun deleteClient(pos: Int) = viewModelScope.launch {
         clientListState.value?.get(pos)?.id?.let {
+
             showLoading()
+
             when (val result = clientRepository.deleteClient(it)) {
                 is Result.Error -> result.error.message.actionExceptionMsg(error = { showError(R.string.cannot_update_entries) })
                 is Result.Value -> clientUpdated()

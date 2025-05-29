@@ -83,6 +83,7 @@ class ProductViewModel(
     private fun deleteProduct(pos: Int) = viewModelScope.launch {
         productListState.value?.get(pos)?.id?.let {
             showLoading()
+
             when (val result = productRepository.deleteProduct(it)) {
                 is Result.Error -> result.error.message.actionExceptionMsg(error = { showError(R.string.cannot_update_entries) })
                 is Result.Value -> productUpdated()

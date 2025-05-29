@@ -14,10 +14,12 @@
     <string name="permission_granted_storage">Storage Permission Granted</string>
     <string name="permission_denied_storage">Storage Permission Denied</string>
 
-    <string name="statics">Statistics</string>
-    <string name="statics_use">Use Live Statistics.</string>
-    <string name="statics_summary">Use statistics to auto-calculate total asset price, quantity, and total balance.</string>
+    <string name="statistics">Statistics</string>
+    <string name="statistics_use">Use Live Statistics.</string>
+    <string name="statistics_summary">Use statistics to auto-calculate total asset price, quantity, and total balance.</string>
     <string name="statistics_error">Cannot read statistics.</string>
+    <string name="statistics_disabled">Statistics Disabled.</string>
+    <string name="statistics_today">Today\'s Statistics.</string>
 
     <string name="server">Server</string>
     <string name="server_use">Use a Remote Server.</string>
@@ -32,7 +34,8 @@
     <string name="cache">Cache time</string>
     <string name="cache_clear">Clear Cache?</string>
     <string name="cache_reset">Reset Cache Times?</string>
-    <string name="cache_time_setup">Set the maximum cache time for the main item list local storage, default is 10 minutes.</string>
+    <string name="cache_time_setup_10_min">Set the maximum cache time for the main item list local storage, default is 10 minutes.</string>
+    <string name="cache_time_setup_4_h">Set the maximum cache time for the main item list local storage, default is 4 hours.</string>
 
 
     <string name="backups">Data Backups.</string>
@@ -54,15 +57,18 @@
 
     <string name="filter">Filter</string>
     <string name="filtered">Filtered</string>
-    <string name="filter_by_month">Filter Within this month.</string>
+    <string name="filter_by_month">Filter within this month.</string>
     <string name="filter_by_month_summary">Filter the data and search process within this day only.</string>
     <string name="filter_by_active">Filter By Active.</string>
     <string name="filter_by_active_summary">Filter the data list and search process by active items only.</string>
     <string name="filter_by_sell">Filter By Sell.</string>
     <string name="filter_by_sell_summary">Filter the data and search process by sell items only.</string>
+    <string name="filter_by_today">Filter today\'s only</string>
+    <string name="filter_by_today_summary">Filter the data list on this day only.</string>
 
     <string name="notes_use">Use Business Notes.</string>
     <string name="notes_summary">Create, update, and delete notes for your team.</string>
+    <string name="notes_disabled">Notes disabled.</string>
 
     <string name="share_suggest">Suggest share.</string>
     <string name="share_summary">Suggest item sharing each time the item is successfully updated.</string>
@@ -84,12 +90,13 @@
     <string name="delete_permanently">Delete Permanently</string>
 
     <string name="balance">Balance</string>
-    <string name="balance_total">Total balance</string>
     <string name="balance_use">Calculate Balance.</string>
+    <string name="balance_disabled">Balance Disabled.</string>
+    <string name="balance_total">Total balance</string>
     <string name="balance_summary">calculate total items balance.</string>
-    <string name="balance_today">Today\'s balance only.</string>
+    <string name="balance_today">Today\'s balance.</string>
     <string name="balance_active">Active</string>
-    <string name="balance_all">All</string>
+    <string name="balance_all">All time\'s balance.</string>
     <string name="balance_read_error">Cannot read balance.</string>
 
     <string name="city">City</string>
@@ -134,6 +141,7 @@
     <string name="notes_list">Notes List</string>
     <string name="note_list_error">Error retrieving note list.</string>
     <string name="note_hint">Only your team would receive these instructions or notes.</string>
+    <string name="notes_today">Today\'s notes.</string>
 
     <string name="team">Team</string>
     <string name="team_search">Search for team member.</string>
@@ -146,12 +154,16 @@
     <string name="transaction_list_error">Error retrieving transaction list.</string>
     <string name="transaction_hint">Only your activated team members will receive these updates.</string>
     <string name="transaction_note_hint">Attach a note.</string>
+    <string name="transactions_no">No of Trans</string>
+    <string name="transactions_today">Today\'s transactions.</string>
 
     <string name="stock">Stock</string>
+    <string name="stock_use">Use Live Stock.</string>
+    <string name="stock_disabled">Stock Disabled.</string>
     <string name="stock_list">Stock List</string>
     <string name="stock_list_error">Error retrieving stock list.</string>
-    <string name="stock_use">Use Live Stock.</string>
     <string name="stock_summary">Use stock statistics to auto-calculate total asset quantity, and total stock balance.</string>
+    <string name="stock_today">Today\'s stock.</string>
 
     <string name="unable_to_sign_in">Unable to complete the signing-in process.</string>
     <string name="unable_to_sign_out">Unable to complete the signing out process.</string>
@@ -190,6 +202,7 @@
     <string name="price">Price</string>
     <string name="price_total">Total Price</string>
     <string name="price_total_calculation">Total price = Unit price * No. of units.</string>
+    <string name="price_total_calculation_quantity">Total price = Price * Quantity.</string>
 
     <string name="today">Today</string>
     <string name="yesterday">Yesterday</string>
@@ -244,16 +257,16 @@
     <string name="advanced_settings">Advanced Settings</string>
 
     <string name="buy">Buy</string>
-    <string name="buy_cost">Buy\\Cost</string>
-    <string name="buy_quantity">Buy\\Quan</string>
+    <string name="buy_no">No of buy</string>
 
     <string name="sell">Sell</string>
-    <string name="sell_cost">Sell\\Cost</string>
-    <string name="sell_quantity">Sell\\Quan</string>
+    <string name="sell_no">No of Sell</string>
 
     <string name="quantity">Quantity</string>
+    <string name="quantity_total">Total Quantity</string>
 
     <string name="cost">Cost</string>
+    <string name="cost_total">Total Cost</string>
 
     <string name="assets">Assets</string>
 
@@ -264,6 +277,10 @@
 
     <string name="share_item">Share as plain text</string>
 
-    <string name="name">name</string>
+    <string name="name">Name</string>
+
+    <string name="calculate">Calculating…</string>
+
+    <string name="data_display">Data Display</string>
 
 </resources>

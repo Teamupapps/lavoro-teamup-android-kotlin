@@ -1,9 +1,12 @@
 package lavoro.teamup.home
 
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
@@ -17,6 +20,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import lavoro.teamup.R
 import lavoro.teamup.authentication.AuthenticationActivity
+import lavoro.teamup.core.STORAGE_PERMISSION_CODE
 import lavoro.teamup.core.setActionBarFontTitle
 import lavoro.teamup.core.view.makeToast
 import lavoro.teamup.core.view.visible
@@ -27,7 +31,7 @@ import lavoro.teamup.home.buildlogic.HomeActivityInjector
 
 private const val DELAY_LOGIN = 1000L
 
-class HomeActivity : HomeActivityUgly(), HomeActivityInteract {
+class HomeActivity : AppCompatActivity(), HomeActivityInteract {
 
     private lateinit var homeBinding: ActivityHomeBinding
     private lateinit var navController: NavController
@@ -193,4 +197,35 @@ class HomeActivity : HomeActivityUgly(), HomeActivityInteract {
 
         snackBar.show()
     }
+
+    override fun checkWriteStoragePermission(action: (() -> Unit)?) {
+        if (ContextCompat.checkSelfPermission(
+                this, android.Manifest.permission.WRITE_EXTERNAL_STORAGE
+            ) == PackageManager.PERMISSION_GRANTED
+        ) {
+
+            action?.invoke()
+
+        } else ActivityCompat.requestPermissions(
+            this, arrayOf(
+                android.Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                android.Manifest.permission.READ_EXTERNAL_STORAGE
+            ), STORAGE_PERMISSION_CODE
+        )
+    }
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode == STORAGE_PERMISSION_CODE) {
+            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) makeToast(
+                getString(R.string.permission_granted_storage)
+            )
+            else makeToast(getString(R.string.permission_denied_storage))
+        }
+    }
+
 }

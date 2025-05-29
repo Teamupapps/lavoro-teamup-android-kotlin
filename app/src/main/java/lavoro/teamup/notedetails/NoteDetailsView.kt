@@ -23,7 +23,7 @@ import lavoro.teamup.notedetails.buildlogic.NoteViewInjector
 class NoteDetailsView : Fragment(), View.OnClickListener,
     ViewBindingHolder<ViewNoteDetailsBinding> by ViewBindingHolderImpl() {
 
-    private lateinit var viewModel: NoteViewModel
+    private lateinit var viewModel: NoteDetailsViewModel
     private lateinit var viewInteract: HomeActivityInteract
 
     override fun onDestroyView() {
@@ -77,7 +77,7 @@ class NoteDetailsView : Fragment(), View.OnClickListener,
         viewModel = ViewModelProvider(
             owner = this@NoteDetailsView,
             factory = NoteViewInjector(requireActivity().application).provideViewModelFactory()
-        )[NoteViewModel::class.java]
+        )[NoteDetailsViewModel::class.java]
         viewModel.handleEvent(NoteDetailsViewEvent.OnStartGetNote)
     }
 
@@ -91,7 +91,7 @@ class NoteDetailsView : Fragment(), View.OnClickListener,
         }
     }
 
-    private fun NoteViewModel.startObserving() {
+    private fun NoteDetailsViewModel.startObserving() {
         loading.observe(viewLifecycleOwner) {
             viewInteract.updateProgressLoad(it)
         }

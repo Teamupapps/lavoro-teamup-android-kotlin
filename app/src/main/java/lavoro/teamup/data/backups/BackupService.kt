@@ -9,7 +9,20 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import lavoro.teamup.core.ACTION_DATA_BACKUPS
 import lavoro.teamup.core.STOP_SERVICE
+import lavoro.teamup.core.getCalendarSearchDay
+import lavoro.teamup.core.lazyDeferred
+import lavoro.teamup.core.mapping.toTransaction
+import lavoro.teamup.core.wrapper.Result
 import lavoro.teamup.data.backups.notifications.NotificationManager
+import lavoro.teamup.data.connectivity.ConnectivityInterceptorImpl
+import lavoro.teamup.data.exportApi.ExcelAPIImpl
+import lavoro.teamup.data.implementation.TransactionRepositoryImpl
+import lavoro.teamup.data.model.entry.HistoryEntry
+import lavoro.teamup.data.model.transaction.RemoteTransaction
+import lavoro.teamup.data.preference.datalist.TransactionListPreferenceImpl
+import lavoro.teamup.data.preference.transaction.TransactionFilterPreferenceImpl
+import lavoro.teamup.data.preference.util.UtilPreferenceImpl
+import lavoro.teamup.data.room.TeamDatabase
 
 class BackupService : Service() {
 
@@ -38,6 +51,50 @@ class BackupService : Service() {
         when (intent?.action) {
             ACTION_DATA_BACKUPS -> coroutineScope.launch {
 
+                val deferredTransactionList by lazyDeferred {
+                    when (val result = TransactionRepositoryImpl(
+                        listPreference = TransactionListPreferenceImpl(application),
+                        filterPreference = TransactionFilterPreferenceImpl(application),
+                        local = TeamDatabase.invoke(application).transactionDao(),
+                        localUser = TeamDatabase.invoke(application).userDao(),
+                        utilPreference = UtilPreferenceImpl(application),
+                        connectInterceptor = ConnectivityInterceptorImpl(application),
+                    ).filterTransactionList(
+                        item = RemoteTransaction(
+                            historyEntry = HistoryEntry(
+                                creationDate = getCalendarSearchDay(day = -1)
+                            )
+                        ).toTransaction
+                    )) {
+                        is Result.Error -> {
+                            println("Backups: Transaction exporting result error ${result.error}")
+                            emptyList()
+                        }
+
+                        is Result.Value -> {
+                            println("Backups: Transaction exporting..size=${result.value.size}")
+                            result.value
+                        }
+                    }
+                }
+
+                deferredTransactionList.await().let {
+
+                    when (val result = ExcelAPIImpl().buildTransactionListFile(
+                        list = deferredTransactionList.await()
+                    )) {
+                        is Result.Error -> {
+                            println("Backups: Transaction exporting Result error ${result.error}")
+                            stopService()
+                        }
+
+                        is Result.Value -> {
+                            println("Backups: Transaction exporting completed.")
+                            stopService()
+                        }
+                    }
+
+                }
             }
 
             STOP_SERVICE -> stopService()

@@ -4,9 +4,6 @@
         android:id="@+id/update_item_menu"
         android:title="@string/update" />
     <item
-        android:id="@+id/refresh_menu"
-        android:title="@string/refresh_list" />
-    <item
         android:id="@+id/delete_menu"
         android:title="@string/delete_permanently" />
 </menu>

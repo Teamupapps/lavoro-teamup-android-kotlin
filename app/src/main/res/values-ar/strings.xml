@@ -15,10 +15,12 @@
     <string name="permission_granted_storage">تم منح إذن الوصول للذاكرة</string>
     <string name="permission_denied_storage">لم يتم منح إذن الوصول للذاكرة</string>
 
-    <string name="statics">الإحصائيات</string>
-    <string name="statics_use">عرض الإحصائيات.</string>
-    <string name="statics_summary">استخدم الإحصائيات المباشرة لحساب إجمالي البيانات تلقائيًا.</string>
+    <string name="statistics">الإحصائيات</string>
+    <string name="statistics_use">عرض الإحصائيات.</string>
+    <string name="statistics_summary">استخدم الإحصائيات المباشرة لحساب إجمالي البيانات تلقائيًا.</string>
     <string name="statistics_error">تعذر قراءة الإحصائيات.</string>
+    <string name="statistics_disabled">تم تعطيل الإحصائيات.</string>
+    <string name="statistics_today">إحصائيات عناصر اليوم فقط.</string>
 
     <string name="server">الخادم</string>
     <string name="server_use">أستخدم خادمًا خاص.</string>
@@ -33,7 +35,8 @@
     <string name="cache">التخزين المؤقت</string>
     <string name="cache_reset">إعادة ضبط وقت التخزين</string>
     <string name="cache_clear">حذف ذاكرة التخزين المؤقت</string>
-    <string name="cache_time_setup">تعيين الحد الأقصى لوقت التخزين المؤقت لقائمة العناصر الرئيسية،الأفتراضي هو 10 دقائق.</string>
+    <string name="cache_time_setup_10_min">تعيين الحد الأقصى لوقت التخزين المؤقت لقائمة العناصر الرئيسية،الأفتراضي هو 10 دقائق.</string>
+    <string name="cache_time_setup_4_h">تعيين الحد الأقصى لوقت التخزين المؤقت لقائمة العناصر الرئيسية،الأفتراضي هو 4 ساعات.</string>
 
     <string name="backups">النسخ التلقائي</string>
     <string name="backups_settings">النسخ التلقائي</string>
@@ -60,9 +63,12 @@
     <string name="filter_by_month_summary">قم بتصفية البيانات وعملية البحث خلال هذا الشهر فقط.</string>
     <string name="filter_by_active_summary">تصفية البيانات وعملية البحث حسب العناصر النشطة فقط.</string>
     <string name="filter_by_sell_summary">قم بتصفية البيانات وعملية البحث حسب عناصر البيع فقط.</string>
+    <string name="filter_by_today">تصفية حسب بيانات اليوم فقط.</string>
+    <string name="filter_by_today_summary">تصفية قائمة البيانات لهذا اليوم فقط.</string>
 
     <string name="notes_use">أستخدم ملاحظات العمل.</string>
     <string name="notes_summary">إنشاء وتحديث وحذف الملاحظات لفريقك.</string>
+    <string name="notes_disabled">تم تعطيل الملاحظات.</string>
 
     <string name="share_suggest">أقتراح تلقائي لمشاركة البيانات.</string>
     <string name="share_summary">أقتراح تلقائي لمشاركة العنصر في كل مرة يتم فيها تحديث العنصر بنجاح.</string>
@@ -84,8 +90,9 @@
     <string name="delete_permanently">حذف نهائيا</string>
 
     <string name="balance">الرصيد</string>
-    <string name="balance_total">الرصيد الكلي</string>
     <string name="balance_use">حساب رصيد الكلي.</string>
+    <string name="balance_disabled">تم تعطيل الرصيد.</string>
+    <string name="balance_total">الرصيد الكلي</string>
     <string name="balance_summary">استخدم رصيد الكلي لحساب إجمالي البيانات تلقائيًا.</string>
     <string name="balance_today">رصيد عناصر اليوم فقط.</string>
     <string name="balance_active">رصيد العناصر النشطة فقط.</string>
@@ -133,8 +140,9 @@
     <string name="note">ملاحظة</string>
     <string name="notes">الملاحظات</string>
     <string name="notes_list">قائمة الملاحظات</string>
-    <string name="note_list_error">خطأ في أستردادالملاحظات.</string>
+    <string name="note_list_error">خطأ في أسترداد الملاحظات.</string>
     <string name="note_hint">سيتلقى فريقك فقط هذه التعليمات أو الملاحظات.</string>
+    <string name="notes_today">الملاحظات اليوم فقط.</string>
 
     <string name="team">فريقي</string>
     <string name="team_search">أبحث عن مستخدم.</string>
@@ -147,12 +155,16 @@
     <string name="transaction_list_error">خطأ في أستردادالمعاملات.</string>
     <string name="transaction_hint">سيتلقى أعضاء فريقك النشطون فقط هذه التحديثات.</string>
     <string name="transaction_note_hint">أرفق ملاحظة.</string>
+    <string name="transactions_no">عدد المعاملات</string>
+    <string name="transactions_today">معاملات اليوم فقط.</string>
 
     <string name="stock">الخزنة</string>
+    <string name="stock_use">استخدم المخزون الحالي.</string>
+    <string name="stock_disabled">تم تعطيل المخزون.</string>
     <string name="stock_list">الخزنة</string>
     <string name="stock_list_error">خطأ في أسترداد بيانات الخزنة.</string>
-    <string name="stock_use">استخدم المخزون الحالي.</string>
     <string name="stock_summary">استخدم إحصاءات المخزون لحساب إجمالي كمية الأصول ورصيد المخزون الإجمالي تلقائيًا.</string>
+    <string name="stock_today">إجمالي مخزون اليوم فقط.</string>
 
     <string name="unable_to_sign_out">تعذر إكمال عملية تسجيل الخروج.</string>
     <string name="unable_to_sign_in">تعذر إكمال عملية تسجيل الدخول.</string>
@@ -191,6 +203,7 @@
     <string name="price">السعر</string>
     <string name="price_total">السعر الإجمالي</string>
     <string name="price_total_calculation">السعر الإجمالي = سعر الوحدة * عدد الوحدات.</string>
+    <string name="price_total_calculation_quantity">السعر الإجمالي = سعر الوحدة * الكمية.</string>
 
     <string name="today">اليوم</string>
     <string name="yesterday">أمس</string>
@@ -244,16 +257,16 @@
     <string name="advanced_settings">إعدادات متقدمة</string>
 
     <string name="buy">شراء</string>
-    <string name="buy_cost">تكلفة\\الشراء</string>
-    <string name="buy_quantity">كمية\\الشراء</string>
+    <string name="buy_no">عدد المشتريات</string>
 
     <string name="sell">بيع</string>
-    <string name="sell_cost">تكلفة\\البيع</string>
-    <string name="sell_quantity">كمية\\البيع</string>
+    <string name="sell_no">عدد المبيعات</string>
 
     <string name="quantity">الكمية</string>
+    <string name="quantity_total">إجمالي الكمية</string>
 
     <string name="cost">التكلفة</string>
+    <string name="cost_total">إجمالي التكلفة</string>
 
     <string name="assets">الأصول</string>
 
@@ -264,5 +277,9 @@
     <string name="share_item">مشاركة كنص عادي</string>
 
     <string name="name">الأسم</string>
+
+    <string name="calculate">جاري حساب…</string>
+
+    <string name="data_display">عرض البيانات</string>
 
 </resources>

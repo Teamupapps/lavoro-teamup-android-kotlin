@@ -2,8 +2,9 @@ package lavoro.teamup.data.model.balance
 
 import lavoro.teamup.core.wrapper.UIResource
 
-data class TransactionBalance(
-    var id:String,
+data class TransactionFilterBalance(
+    var id: String,
     var total: Double,
-    var isCost: Boolean
+    var title: UIResource,
+    var isSell:Boolean
 )

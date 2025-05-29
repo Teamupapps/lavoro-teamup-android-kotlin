@@ -56,7 +56,7 @@ open class BaseAdministrationViewModel<VE>(
 
     protected fun isNoteEnable() = preferenceRepository?.getUseNoteStatus()
 
-    protected fun isStaticsEnable() = preferenceRepository?.getUseStaticsStatus()
+    protected fun isStatisticsEnable() = preferenceRepository?.getUseStaticsStatus()
 
     protected fun isStockEnable() = preferenceRepository?.getUseStockStatus()
 

@@ -4,8 +4,8 @@ import android.os.Bundle
 import androidx.preference.PreferenceFragmentCompat
 import lavoro.teamup.R
 
-class DataStaticsPreferenceView : PreferenceFragmentCompat() {
+class DataStatisticsPreferenceView : PreferenceFragmentCompat() {
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
-        addPreferencesFromResource(R.xml.data_statics_preferences)
+        addPreferencesFromResource(R.xml.data_statistics_preferences)
     }
 }
